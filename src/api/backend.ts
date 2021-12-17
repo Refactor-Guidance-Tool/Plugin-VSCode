@@ -74,7 +74,7 @@ export class Backend {
 			return;
 		}
 
-		const workSpacePath = vscode.workspace.workspaceFolders[0].uri.path;
+		const workSpacePath = vscode.workspace.workspaceFolders[0].uri.fsPath;
 	
 		// creating a project also creates the database.
 		// so if we already have a project, delete it and add it (to simulate an update)
